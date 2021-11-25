@@ -1,0 +1,19 @@
+<script src="./js/web-components.js"></script>
+
+<ui-modal id="modal-custom"></ui-modal>
+<button onclick="change(1)">Touch me😏!</button>
+
+<style>
+    html,
+    body {
+        margin: 0;
+    }
+</style>
+
+<script>
+    function change(flag) {
+        const ui = document.querySelector('#modal-custom')
+        console.log(ui);
+        ui.setAttribute('data-mode', (flag) ? 'max' : 'min')
+    }
+</script>
